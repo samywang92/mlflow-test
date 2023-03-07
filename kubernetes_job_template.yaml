@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: "docker-example"
+  namespace: mlflow
+spec:
+  ttlSecondsAfterFinished: 100
+  backoffLimit: 6
+  template:
+    spec:
+      containers:
+        - name: "docker-example"
+          image: "108083104270.dkr.ecr.us-west-2.amazonaws.com/mlflow-kubernetes-example:latest"
+          command: [""]
+          resources:
+            limits:
+              memory: 512Mi
+            requests:
+              memory: 256Mi
+      restartPolicy: Never

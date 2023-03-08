@@ -1,4 +1,4 @@
 {
-  "kube-job-template-path": "docker/kubernetes_job_template.yaml",
+  "kube-job-template-path": "kubernetes_job_template.yaml",
   "repository-uri": "108083104270.dkr.ecr.us-west-2.amazonaws.com/mlflow-kubernetes-example"
 }

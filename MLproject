@@ -1,7 +1,7 @@
 name: docker-example
 
 docker_env:
-  image:  mlflow-docker-example
+  image:  280883893231.dkr.ecr.ap-northeast-1.amazonaws.com/mlflow-kubernetes-example:latest
 
 entry_points:
   main:

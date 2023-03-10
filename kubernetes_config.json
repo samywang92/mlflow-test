@@ -1,4 +1,0 @@
-{
-  "kube-job-template-path": "kubernetes_job_template.yaml",
-  "repository-uri": "280883893231.dkr.ecr.ap-northeast-1.amazonaws.com/mlflow-kubernetes-example"
-}

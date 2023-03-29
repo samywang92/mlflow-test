@@ -9,4 +9,4 @@ entry_points:
     parameters:
       alpha: float
       l1_ratio: {type: float, default: 0.1}
-    command: "sleep 1000;"
+    command: "sleep 800"

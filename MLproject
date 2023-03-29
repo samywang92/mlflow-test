@@ -2,7 +2,7 @@ name: docker-example
 
 docker_env:
   image:  280883893231.dkr.ecr.ap-northeast-1.amazonaws.com/mlflow-kubernetes-example:latest
-  volumes: ["/raid/datasets/IMAGENET:/mmclassification/data/imagenet"]
+  volumes: ["/raid/datasets/IMAGENET:/home/data/imagenet"]
 
 entry_points:
   main:

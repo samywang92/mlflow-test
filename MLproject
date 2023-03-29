@@ -2,10 +2,11 @@ name: docker-example
 
 docker_env:
   image:  280883893231.dkr.ecr.ap-northeast-1.amazonaws.com/mlflow-kubernetes-example:latest
+  volumes: ["$IMAGENET_DIR:/mmclassification/data/imagenet"]
 
 entry_points:
   main:
     parameters:
       alpha: float
       l1_ratio: {type: float, default: 0.1}
-    command: "python home/train.py --alpha {alpha} --l1-ratio {l1_ratio}"
+    command: "cd data; ls; sleep 800;"
